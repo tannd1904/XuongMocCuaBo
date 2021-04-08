@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/btnToTop.css">
+    <link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/SanPham/library.css">
+	<link rel="stylesheet" href="css/SanPham/sanpham.css">
+	
+    <link rel="stylesheet" href="css/footer.css" />
+	<link rel="stylesheet" href="css/icon-bar.css" />
+    <script src="js/jquery.zoom.js"></script>
+	<script src="js/jquery.zoom.min.js"></script>
+    <script>
+		window.onload = function () {
+			var width = document.getElementById('header_id').offsetWidth;
+			if(width < 768)
+			{
+				var value = document.getElementById('header-items-id').style.display;
+				if(value == "none")
+				{
+					document.getElementById('header_id').style.setProperty('min-height', '96px');				
+					document.getElementById('icon').classList.remove('fa-times');
+					document.getElementById('icon').classList.add('fa-bars');
+				}else
+				{
+					document.getElementById('icon').classList.remove('fa-bars');
+					document.getElementById('icon').classList.add('fa-times');
+					document.getElementById('header_id').style.setProperty('min-height', '300px');
+				}
+			}else{
+                var value = document.getElementById('header-items-id').style.display;
+				if(value == "none")
+				{
+					document.getElementById('header_id').style.setProperty('min-height', '96px');
+					// document.getElementById('header-items-id').classList.remove('show');
+					document.getElementById('icon').classList.remove('fa-times');
+					document.getElementById('icon').classList.add('fa-bars');
+				}else
+				{
+					// document.getElementById('header-items-id').classList.remove('show');
+					document.getElementById('icon').classList.remove('fa-bars');
+					document.getElementById('icon').classList.add('fa-times');
+					document.getElementById('header_id').style.setProperty('min-height', '300px');
+				}
+                document.getElementById('header_id').style.setProperty('min-height', '10.6vw');
+            }
+			var value = document.getElementById("library-main").offsetWidth;
+		  if (value > 768) {
+			setTimeout(function () {
+			  $("div.list6").addClass("transit6");
+			  $("div.list7").addClass("transit7");
+			  $("div.list5").addClass("transit5");
+			  $("div.list4").addClass("transit4");
+			  $("div.list8").addClass("transit8");
+			  $("div.list9").addClass("transit9");
+			  $("div.list11").addClass("transit11");
+			  $("div.list12").addClass("transit12");
+			  $("div.list13").addClass("transit13");
+			  $("div.list14").addClass("transit14");
+			  $("div.list15").addClass("transit15");
+			  $("div.list10").addClass("transit10");
+			  $("img.list3").addClass("transit3");
+			}, 2000);
+  
+			setTimeout(function () {
+			  let vl = (document.getElementById(
+				"row-content-main"
+			  ).style.marginTop = "0px");
+			}, 2000);
+  
+			setTimeout(function () {
+			  let val = (document.getElementById("library-main").style.display =
+				"none");
+			  val = document.getElementById("library-after").style.display =
+				"block";
+			  val = document.getElementById("row-content-main").style.marginTop =
+				"100px";
+			}, 3000);
+		  }
+		}
+	  </script>
+	  <style>
+		.transit4 {
+		  transform: translate(230px, 0px);
+		  transition: 1s;
+		}
+  
+		.transit5 {
+		  transform: translate(230px, 0px);
+		  transition: 1s;
+		}
+  
+		.transit6 {
+		  transform: translate(-1124px, 208px);
+		  transition: 1s;
+		}
+  
+		.transit7 {
+		  transform: translate(225px, -205px);
+		  transition: 1s;
+		}
+  
+		.transit8 {
+		  transform: translate(680px, -205px);
+		  transition: 1s;
+		}
+  
+		.transit9 {
+		  transform: translate(680px, -205px);
+		  transition: 1s;
+		}
+  
+		.transit12 {
+		  transform: translate(-898px, 2px);
+		  transition: 1s;
+		}
+  
+		.transit13 {
+		  transform: translate(0px, -202px);
+		  transition: 1s;
+		}
+  
+		.transit14 {
+		  transform: translate(680px, -202px);
+		  transition: 1s;
+		}
+  
+		.transit15 {
+		  transform: translate(681px, -202px);
+		  transition: 1s;
+		}
+  
+		.transit10 {
+		  transform: translate(-225px, 3px);
+		  transition: 1s;
+		}
+  
+		.transit11 {
+		  transform: translate(-221px, 3px);
+		  transition: 1s;
+		}
+  
+		.transit3 {
+		  width: 450px;
+		  height: 409px;
+		  transition: 1s;
+		}
+  
+		.hide {
+		  display: none;
+		}
+  
+		.show {
+		  display: block;
+		}
+	  </style>
+</head>
+<body>
+	<button id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+    <header id="header_id" class="header">
+		<div class="header-menu flex-row">
+			<div class="header-brand">
+				<a href="trangchu.html" class="text-gray"><img src="img/logo.jpg" style="height: auto;" alt="post-1"></a>
+			</div>
+			<div id="header-items-id" class="header-items-class" style="display: block;">
+				<ul class="header-items">
+					<li class="header-link">
+						<a href="Trangchu.html">Trang Chủ</a>
+					</li>
+					<li class="header-link">
+						<a href="XuongBo.html">Xưởng & Bố</a>
+					</li>
+					<li class="header-link">
+						<a href="SanPham.html" style="color: #AB7E57;">Sản Phẩm</a>
+					</li>
+					<li class="header-link">
+						<a href="Sukien.html">Sự Kiện</a>
+					</li>
+					<li class="header-link">
+						<a href="Lienhe.html">Liên Hệ</a>
+					</li>
+				</ul>
+			</div>
+			<div id="header-icon" class="header-icon text-gray">
+				<a href="#" class="icon"><i id="icon" class="fas fa-bars" style=" color:  #AB7E57;"></i></a>
+				<a href="#"><img style="height: auto;"  src="img/flag-VN.png" alt="post-1"></a>
+				<a href="#"><img style="height: auto;"  src="img/flag-US.jpg" alt="post-1"></a>
+			</div>
+		</div>
+	</header>
+    
+	<!-- Phần chạy hình -->
+    <div
+      id="library-main"
+      class="library"
+      style="max-width: 1350px; margin: auto"
+    >
+      <div class="row-ft">
+        <div
+          onclick="openOrClosePopup('img-popup-product-1')"
+          class="col--2 list1"
+        >
+          <img src="img/product/100894065_538988810111030_2251573236980514816_n.jpg" />
+        </div>
+        <div
+          onclick="openOrClosePopup('img-popup-product-2')"
+          class="col--2 list2"
+        >
+          <img src="img/product/69799911_382634622413117_2045380837876170752_n.jpg" />
+        </div>
+        <div onclick="openOrClosePopup('img-popup-product-7')" class="col--2">
+          <img
+            class="list3"
+            src="img/product/E0011.jpg"
+          />
+        </div>
+        <div
+          onclick="openOrClosePopup('img-popup-product-10')"
+          class="col--2 list4"
+        >
+          <img src="img/product/159242279_728015307875045_5907097522914403112_o.jpg" />
+        </div>
+        <div
+          onclick="openOrClosePopup('img-popup-product-11')"
+          class="col--2 list5"
+        >
+          <img src="img/product/98031485_534500750559836_1121994196727627776_n.jpg" />
+        </div>
+        <div
+          onclick="openOrClosePopup('img-popup-product-3')"
+          class="col--2 list6"
+        >
+          <img src="img/product/129093868_673272393349337_5013835419153408681_o.jpg" />
+        </div>
+      </div>
+      <div id="row-rm" class="row-ft">
+        <div
+          onclick="openOrClosePopup('img-popup-product-4')"
+          class="col--2 list7"
+        >
+          <img src="img/product/116703698_580026022673975_1663957546147203301_o.jpg" />
+        </div>
+        <div
+          onclick="openOrClosePopup('img-popup-product-12')"
+          class="col--2 list8"
+        >
+          <img src="img/product/100794186_538988776777700_430468934102155264_n.jpg" />
+        </div>
+        <div
+          onclick="openOrClosePopup('img-popup-product-13')"
+          class="col--2 list9"
+        >
+          <img src="img/product/129093868_673272393349337_5013835419153408681_o.jpg" />
+        </div>
+        <div
+          onclick="openOrClosePopup('img-popup-product-8')"
+          class="col--2 list10"
+        >
+          <img src="img/product/153134222_721772211832688_841366142107114024_o.jpg" />
+        </div>
+        <div
+          onclick="openOrClosePopup('img-popup-product-9')"
+          class="col--2 list11"
+        >
+          <img src="img/product/100051349_538989083444336_4408521635691233280_o.jpg" />
+        </div>
+        <div
+          onclick="openOrClosePopup('img-popup-product-6')"
+          class="col--2 list12"
+        >
+          <img src="img/product/119167714_613407249335852_6146271767834592171_o.jpg" />
+        </div>
+      </div>
+      <div class="row-ft">
+        <div
+          onclick="openOrClosePopup('img-popup-product-8')"
+          class="col--2 list13"
+        >
+          <img src="img/product/153134222_721772211832688_841366142107114024_o.jpg" />
+        </div>
+        <div
+          onclick="openOrClosePopup('img-popup-product-9')"
+          class="col--2 list14"
+        >
+          <img src="img/product/100051349_538989083444336_4408521635691233280_o.jpg" />
+        </div>
+        <div
+          onclick="openOrClosePopup('img-popup-product-6')"
+          class="col--2 list15"
+        >
+          <img src="img/product/119167714_613407249335852_6146271767834592171_o.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Phần hình sau khi chạy animation -->
+    <div
+      id="library-after"
+      class="library hide"
+      style="max-width: 1350px; margin: auto"
+    >
+      <div class="row-ft">
+        <div class="col--4">
+          <img
+            onclick="openOrClosePopup('img-popup-product-1')"
+            class="col--6"
+            src="img/product/100894065_538988810111030_2251573236980514816_n.jpg"
+          />
+          <img
+            onclick="openOrClosePopup('img-popup-product-2')"
+            class="col--6"
+            src="img/product/69799911_382634622413117_2045380837876170752_n.jpg"
+          />
+          <img
+            onclick="openOrClosePopup('img-popup-product-3')"
+            class="col--6"
+            src="img/product/129093868_673272393349337_5013835419153408681_o.jpg"
+          />
+          <img
+            onclick="openOrClosePopup('img-popup-product-4')"
+            class="col--6"
+          src="img/product/116703698_580026022673975_1663957546147203301_o.jpg"
+          />
+          <img
+            onclick="openOrClosePopup('img-popup-product-5')"
+            class="col--6"
+            src="img/product/153134222_721772211832688_841366142107114024_o.jpg"
+          />
+          <img
+            onclick="openOrClosePopup('img-popup-product-6')"
+            class="col--6"
+            src="img/product/119167714_613407249335852_6146271767834592171_o.jpg"
+          />
+        </div>
+
+        <div class="col--4">
+          <img
+            onclick="openOrClosePopup('img-popup-product-7')"
+            class="col--12"
+            style="height: 404px"
+            src="img/product/E0011.jpg"
+          />
+          <img
+            onclick="openOrClosePopup('img-popup-product-8')"
+            class="col--6"
+            src="img/product/153134222_721772211832688_841366142107114024_o.jpg"
+          />
+          <img
+            onclick="openOrClosePopup('img-popup-product-9')"
+            class="col--6"
+            src="img/product/100051349_538989083444336_4408521635691233280_o.jpg"
+          />
+        </div>
+
+        <div class="col--4">
+          <img
+            onclick="openOrClosePopup('img-popup-product-10')"
+            class="col--6"
+            src="img/product/159242279_728015307875045_5907097522914403112_o.jpg"
+          />
+          <img
+            onclick="openOrClosePopup('img-popup-product-11')"
+            class="col--6"
+            src="img/product/98031485_534500750559836_1121994196727627776_n.jpg"
+          />
+          <img
+            onclick="openOrClosePopup('img-popup-product-12')"
+            class="col--6"
+            src="img/product/100794186_538988776777700_430468934102155264_n.jpg"
+          />
+          <img
+            onclick="openOrClosePopup('img-popup-product-13')"
+            class="col--6"
+            src="img/product/129093868_673272393349337_5013835419153408681_o.jpg"
+          />
+          <img
+            onclick="openOrClosePopup('img-popup-product-14')"
+            class="col--6"
+            src="img/product/100051349_538989083444336_4408521635691233280_o.jpg"
+          />
+          <img
+            onclick="openOrClosePopup('img-popup-product-15')"
+            class="col--6"
+            src="img/product/119167714_613407249335852_6146271767834592171_o.jpg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Phần hiển thị trên mobile -->
+    <div id="mobile-display-img" class="mobile-library">
+      <div class="row-ft">
+        <img  onclick="openOrClosePopup('img-popup-product-7')" src="img/product/E0011.jpg"
+              width="100%" height="1000px">
+        <div class="row-ft" style="display: flex;">
+          <div style="width: 50%; height: auto;">
+            <img onclick="openOrClosePopup('img-popup-product-1')" src="img/product/100894065_538988810111030_2251573236980514816_n.jpg">
+            <img onclick="openOrClosePopup('img-popup-product-2')" src="img/product/69799911_382634622413117_2045380837876170752_n.jpg">
+            <img onclick="openOrClosePopup('img-popup-product-3')" src="img/product/129093868_673272393349337_5013835419153408681_o.jpg">
+            <img onclick="openOrClosePopup('img-popup-product-4')" src="img/product/116703698_580026022673975_1663957546147203301_o.jpg">
+            <img onclick="openOrClosePopup('img-popup-product-5')" src="img/product/153134222_721772211832688_841366142107114024_o.jpg">
+            <img onclick="openOrClosePopup('img-popup-product-6')" src="img/product/119167714_613407249335852_6146271767834592171_o.jpg">
+            <img onclick="openOrClosePopup('img-popup-product-8')" src="img/product/153134222_721772211832688_841366142107114024_o.jpg">
+          </div>
+          <div style="width: 50%; height: auto;">
+            <img onclick="openOrClosePopup('img-popup-product-9')" src="img/product/100051349_538989083444336_4408521635691233280_o.jpg">
+            <img onclick="openOrClosePopup('img-popup-product-10')" src="img/product/159242279_728015307875045_5907097522914403112_o.jpg">
+            <img onclick="openOrClosePopup('img-popup-product-11')" src="img/product/98031485_534500750559836_1121994196727627776_n.jpg">
+            <img onclick="openOrClosePopup('img-popup-product-12')" src="img/product/100794186_538988776777700_430468934102155264_n.jpg">
+            <img onclick="openOrClosePopup('img-popup-product-13')" src="img/product/129093868_673272393349337_5013835419153408681_o.jpg">
+            <img onclick="openOrClosePopup('img-popup-product-14')" src="img/product/100051349_538989083444336_4408521635691233280_o.jpg">
+            <img onclick="openOrClosePopup('img-popup-product-15')" src="img/product/119167714_613407249335852_6146271767834592171_o.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+        
+
+    <!-- Phần nội dung chia 2 cột -->
+    <div id="row-content-main" class="row-content">
+      <div class="left-col">
+        <div class="_left-content">
+          <h3>GỖ -</h3>
+          <h3>MỘT ÍT MÂY ĐAN</h3>
+          <br />
+          <p style="line-height: 33px; font-size: 20px">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p style="line-height: 33px; font-size: 20px">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div
+          class="_share"
+          style="
+            border-top: 2px solid #ab7e57;
+            border-bottom: 2px solid #ab7e57;
+            height: 35px;
+            position: relative;
+          "
+        >
+          <a href="">Chia sẻ</a>
+          <div
+            class="_social-media"
+            style="position: absolute; top: 0px; right: 0%"
+          >
+            <a><img src="img/logo-facebook.png" /> </a>
+            <a><img src="img/logo-twiterpng.png" /></a>
+            <a><img src="img/logo-youtubepng.png" /></a>
+            <a><img src="img/logo-instapng.png" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-col">
+        <div class="_right-content">
+          <video width="85%" height="auto" controls>
+            <source
+              src="https://webvn.com/wp-content/uploads/2014/12/mov_bbb.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <img src="img/product/69799911_382634622413117_2045380837876170752_n.jpg" />
+          <img src="img/minimalism.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="img-popup-product-1"
+      style="
+        display: none;
+        margin-top: -30px;
+        margin-bottom: 90px;
+        margin-left: -20%;
+        margin-right: -20%;
+      "
+    >
+	<button
+	id="kill-popup"
+	onclick="openOrClosePopup('img-popup-product-1')"
+	class="popup-close rounded-pill p-4 btn-close"
+  >
+  </button>
+      <div class="card-img">
+		
+        <img
+          src="img/product/100894065_538988810111030_2251573236980514816_n.jpg"
+          alt=""
+        />
+        <div class="card-img-content">
+          <h2>Project 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="img-popup-product-2"
+      style="
+        display: none;
+        margin-top: -30px;
+        margin-bottom: 90px;
+        margin-left: -20%;
+        margin-right: -20%;
+      "
+    >
+      <button
+        id="kill-popup"
+        onclick="openOrClosePopup('img-popup-product-2')"
+        class="popup-close rounded-pill p-4 btn-close" 
+        
+      >
+      </button>
+      <div class="card-img">
+        <img
+          src="img/product/69799911_382634622413117_2045380837876170752_n.jpg"
+          alt=""
+        />
+        <div class="card-img-content">
+          <h2>Project 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="img-popup-product-3"
+      style="
+        display: none;
+        margin-top: -30px;
+        margin-bottom: 90px;
+        margin-left: -20%;
+        margin-right: -20%;
+      "
+    >
+      <button
+        id="kill-popup"
+        onclick="openOrClosePopup('img-popup-product-3')"
+        class="popup-close rounded-pill p-4 btn-close"
+        
+      >
+      </button>
+      <div class="card-img">
+        <img
+          src="img/product/129093868_673272393349337_5013835419153408681_o.jpg"
+          alt=""
+        />
+        <div class="card-img-content">
+          <h2>Project 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="img-popup-product-4"
+      style="
+        display: none;
+        margin-top: -30px;
+        margin-bottom: 90px;
+        margin-left: -20%;
+        margin-right: -20%;
+      "
+    >
+      <button
+        id="kill-popup"
+        onclick="openOrClosePopup('img-popup-product-4')"
+        class="popup-close rounded-pill p-4 btn-close"
+        
+      >
+      </button>
+      <div class="card-img">
+        <img
+          src="img/product/116703698_580026022673975_1663957546147203301_o.jpg"
+          alt=""
+        />
+        <div class="card-img-content">
+          <h2>Project 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="img-popup-product-5"
+      style="
+        display: none;
+        margin-top: -30px;
+        margin-bottom: 90px;
+        margin-left: -20%;
+        margin-right: -20%;
+      "
+    >
+      <button
+        id="kill-popup"
+        onclick="openOrClosePopup('img-popup-product-5')"
+        class="popup-close rounded-pill p-4 btn-close"
+        
+      >
+      </button>
+      <div class="card-img">
+        <img
+          src="img/product/153134222_721772211832688_841366142107114024_o.jpg"
+          alt=""
+        />
+        <div class="card-img-content">
+          <h2>Project 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="img-popup-product-6"
+      style="
+        display: none;
+        margin-top: -30px;
+        margin-bottom: 90px;
+        margin-left: -20%;
+        margin-right: -20%;
+      "
+    >
+      <button
+        id="kill-popup"
+        onclick="openOrClosePopup('img-popup-product-6')"
+        class="popup-close rounded-pill p-4 btn-close"
+        
+      >
+      </button>
+      <div class="card-img">
+        <img
+          src="img/product/119167714_613407249335852_6146271767834592171_o.jpg"
+          alt=""
+        />
+        <div class="card-img-content">
+          <h2>Project 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="img-popup-product-7"
+      style="
+        display: none;
+        margin-top: -30px;
+        margin-bottom: 90px;
+        margin-left: -20%;
+        margin-right: -20%;
+      "
+    >
+      <button
+        id="kill-popup"
+        onclick="openOrClosePopup('img-popup-product-7')"
+        class="popup-close rounded-pill p-4 btn-close" 
+        
+      >
+      </button>
+      <div class="card-img">
+        <img
+          src="img/product/E0011.jpg"
+          alt=""
+        />
+        <div class="card-img-content">
+          <h2>Project 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="img-popup-product-8"
+      style="
+        display: none;
+        margin-top: -30px;
+        margin-bottom: 90px;
+        margin-left: -20%;
+        margin-right: -20%;
+      "
+    >
+      <button
+        id="kill-popup"
+        onclick="openOrClosePopup('img-popup-product-8')"
+        class="popup-close rounded-pill p-4 btn-close"
+        
+      >
+      </button>
+      <div class="card-img">
+        <img
+          src="img/product/153134222_721772211832688_841366142107114024_o.jpg"
+          alt=""
+        />
+        <div class="card-img-content">
+          <h2>Project 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="img-popup-product-9"
+      style="
+        display: none;
+        margin-top: -30px;
+        margin-bottom: 90px;
+        margin-left: -20%;
+        margin-right: -20%;
+      "
+    >
+      <button
+        id="kill-popup"
+        onclick="openOrClosePopup('img-popup-product-9')"
+        class="popup-close rounded-pill p-4 btn-close"
+        
+      >
+      </button>
+      <div class="card-img">
+        <img
+          src="img/product/100051349_538989083444336_4408521635691233280_o.jpg"
+          alt=""
+        />
+        <div class="card-img-content">
+          <h2>Project 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="img-popup-product-10"
+      style="
+        display: none;
+        margin-top: -30px;
+        margin-bottom: 90px;
+        margin-left: -20%;
+        margin-right: -20%;
+      "
+    >
+      <button
+        id="kill-popup"
+        onclick="openOrClosePopup('img-popup-product-10')"
+        class="popup-close rounded-pill p-4 btn-close"
+        
+      >
+      </button>
+      <div class="card-img">
+        <img
+          src="img/product/159242279_728015307875045_5907097522914403112_o.jpg"
+          alt=""
+        />
+        <div class="card-img-content">
+          <h2>Project 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="img-popup-product-11"
+      style="
+        display: none;
+        margin-top: -30px;
+        margin-bottom: 90px;
+        margin-left: -20%;
+        margin-right: -20%;
+      "
+    >
+      <button
+        id="kill-popup"
+        onclick="openOrClosePopup('img-popup-product-11')"
+        class="popup-close rounded-pill p-4 btn-close"
+    
+      >
+      </button>
+      <div class="card-img">
+        <img
+          src="img/product/98031485_534500750559836_1121994196727627776_n.jpg"
+          alt=""
+        />
+        <div class="card-img-content">
+          <h2>Project 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="img-popup-product-12"
+      style="
+        display: none;
+        margin-top: -30px;
+        margin-bottom: 90px;
+        margin-left: -20%;
+        margin-right: -20%;
+      "
+    >
+      <button
+        id="kill-popup"
+        onclick="openOrClosePopup('img-popup-product-12')"
+        class="popup-close rounded-pill p-4 btn-close"
+        
+      >
+      </button>
+      <div class="card-img">
+        <img
+          src="img/product/100794186_538988776777700_430468934102155264_n.jpg"
+          alt=""
+        />
+        <div class="card-img-content">
+          <h2>Project 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="img-popup-product-13"
+      style="
+        display: none;
+        margin-top: -30px;
+        margin-bottom: 90px;
+        margin-left: -20%;
+        margin-right: -20%;
+      "
+    >
+      <button
+        id="kill-popup"
+        onclick="openOrClosePopup('img-popup-product-13')"
+        class="popup-close rounded-pill p-4 btn-close"
+        
+      >
+      </button>
+      <div class="card-img">
+        <img
+          src="img/product/129093868_673272393349337_5013835419153408681_o.jpg"
+          alt=""
+        />
+        <div class="card-img-content">
+          <h2>Project 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="img-popup-product-14"
+      style="
+        display: none;
+        margin-top: -30px;
+        margin-bottom: 90px;
+        margin-left: -20%;
+        margin-right: -20%;
+      "
+    >
+      <button
+        id="kill-popup"
+        onclick="openOrClosePopup('img-popup-product-14')"
+        class="popup-close rounded-pill p-4 btn-close"
+       
+      >
+      </button>
+      <div class="card-img">
+        <img
+          src="img/product/100051349_538989083444336_4408521635691233280_o.jpg"
+          alt=""
+        />
+        <div class="card-img-content">
+          <h2>Project 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="img-popup-product-15"
+      style="
+        display: none;
+        margin-top: -30px;
+        margin-bottom: 90px;
+        margin-left: -20%;
+        margin-right: -20%;
+      "
+    >
+      <button
+        id="kill-popup"
+        onclick="openOrClosePopup('img-popup-product-15')"
+        class="popup-close rounded-pill p-4 btn-close"
+        
+      >
+      </button>
+      <div class="card-img">
+        <img
+          src="img/product/119167714_613407249335852_6146271767834592171_o.jpg"
+          alt=""
+        />
+        <div class="card-img-content">
+          <h2>Project 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+	
+    <!---------- Footer ---------->
+	<footer id="footer" >
+		<div class="container-fluid padding padding-footer">
+			<div class="row text-center">
+				<div class="col-md-3">
+					<img style="height: auto;" src="img/logo.jpg">
+				</div>
+				<div class="col-md-2 menu-footer">
+					<a href="Trangchu.html">Trang chủ</a>
+					<a href="XuongBo.html">Xưởng & Bố</a>
+                    <a href="SanPham.html">Sản phẩm</a>
+                    <a href="Sukien.html">Sự kiện</a>
+				</div>
+				<div class="col-md-2 menu-footer">
+					<a>Cửa hàng</a>
+					<a>Tin tức</a>
+                    <a>Dự án</a>
+                    <a href="Lienhe.html">Liên hệ</a>
+				</div>
+                <div class="col-md-5">
+					<p style="margin-bottom: 15px;">Số 96/24 Đường TX25, Khu phố 2, Phường Thạnh Xuân, Quận 12, TP Hồ Chí Minh</p>
+                    <p style="margin-bottom: 15px;">Hotline: 096 613 9597 (Mr Hùng) </p>
+                    <a href="xuongmoccuabo@gmail.com" style="color: #707070;
+                    text-decoration-line: none;">xuongmoccuabo@gmail.com</a>
+				</div>         
+            </div>
+		</div>
+        <div class="container-fluid padding padding-footer1">
+			<div class="row text-center">
+				<div class="col-md-4 copy">
+                    <p>@copy-right 2021 AToZ</p>
+                </div>
+                <div class="col-md-4">
+                    
+                </div>
+                <div class="col-md-4 payment">
+                    <img style="height: auto;" src="img/Payment.png">
+                </div>
+            </div>
+		</div>
+	</footer>
+	<div class="icon-bar">
+		<a href="https://www.facebook.com/X%C6%B0%E1%BB%9Fng-M%E1%BB%99c-c%E1%BB%A7a-B%E1%BB%91-184283932248188"><img src="img/b763699fd1fa3bfb374442593ae642e1.png" style="width: 80px; height: auto;"> </a>
+		<a href="https://www.instagram.com/xuongmoccuabo/"><img src="img/639b3dafb544d6f061fcddd2d6686ddb.png" style="width: 95px; height: auto;"> </a>
+		<a href="https://zalo.me/0902215841"><img src="img/vn.com.vng.zingalo_source.png" style="width: 60px; height: auto; margin-top: 10px;"> </a>
+	</div>
+    <!---------- End Footer ---------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/resize.js"></script>
+    <script src="js/header.js"></script>
+	<script src="js/SanPham/Script.js"></script>
+	<script src="js/btnToTop.js"></script>
+</body>
+</html>

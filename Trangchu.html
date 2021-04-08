@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/btnToTop.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/Title.css" />
+    <link rel="stylesheet" href="css/number.css" />
+    <link rel="stylesheet" href="css/experience.css" />
+    <link rel="stylesheet" href="css/listProduct.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/card-img.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+	<link rel="stylesheet" href="css/icon-bar.css" />
+    <script src="js/jquery.zoom.js"></script>
+	<script src="js/jquery.zoom.min.js"></script>
+    <script>
+		window.onload = function () {
+			var width = document.getElementById('header_id').offsetWidth;
+			if(width < 768)
+			{
+				var value = document.getElementById('header-items-id').style.display;
+				if(value == "none")
+				{
+					document.getElementById('header_id').style.setProperty('min-height', '96px');
+				}else
+				{
+					document.getElementById('header_id').style.setProperty('min-height', '300px');
+				}
+			}else{
+                document.getElementById('header_id').style.setProperty('min-height', '10.6vw');
+            }
+		}
+    $(document).ready(function(){
+        $(window).resize(function(){
+            var width = document.getElementById('header_id').offsetWidth;
+			if(width < 768)
+			{
+				// document.getElementById('header_id').style.setProperty('min-height', '136px');
+				if(document.getElementById('icon').classList.contains('fa-times') == true)
+				{
+					document.getElementById('header_id').style.setProperty('min-height', '300px');
+					
+				}
+                if(document.getElementById('icon').classList.contains('fa-bars') == true)
+				{
+					document.getElementById('header_id').style.setProperty('min-height', '96px');
+					
+				}
+            }else{
+				// document.getElementById('header_id').style.setProperty('min-height', '136px');
+				if(document.getElementById('icon').classList.contains('fa-times') == true)
+				{
+					document.getElementById('header_id').style.setProperty('min-height', '10.6vw');
+                    
+				}
+                if(document.getElementById('icon').classList.contains('fa-bars') == true)
+				{
+					document.getElementById('header_id').style.setProperty('min-height', '10.6vw');
+				}
+			}
+			
+        });
+    });
+	  </script>
+</head>
+<body>
+	<button id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+    <header id="header_id" class="header">
+		<div class="header-menu flex-row">
+			<div class="header-brand">
+				<a href="trangchu.html" class="text-gray"><img src="img/logo.jpg" alt="post-1"></a>
+			</div>
+			<div id="header-items-id" class="header-items-class" style="display: none;">
+				<ul class="header-items">
+					<li class="header-link">
+						<a href="Trangchu.html" style="color: #AB7E57;">Trang Chủ</a>
+					</li>
+					<li class="header-link">
+						<a href="XuongBo.html">Xưởng & Bố</a>
+					</li>
+					<li class="header-link">
+						<a href="SanPham.html">Sản Phẩm</a>
+					</li>
+					<li class="header-link">
+						<a href="Sukien.html">Sự Kiện</a>
+					</li>
+					<li class="header-link">
+						<a href="Lienhe.html">Liên Hệ</a>
+					</li>
+				</ul>
+			</div>
+			<div id="header-icon" class="header-icon text-gray">
+				<a href="#" class="icon"><i id="icon" class="fas fa-bars" style=" color:  #AB7E57;"></i></a>
+				<a href="#"><img src="img/flag-VN.png" alt="post-1"></a>
+				<a href="#"><img src="img/flag-US.jpg" alt="post-1"></a>
+			</div>
+		</div>
+	</header>
+    <div class="title" style="background-image: url('img/product/159242279_728015307875045_5907097522914403112_o.jpg');background-position: center;">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-12 text-center">
+                    <h1>XƯỞNG MỘC CỦA BỐ</h1>
+                    <p>
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------- Chạy số ----------->
+    <div class="container-fluid padding number" style="background-color: #f7f7f7;margin-bottom: 46px;">
+        <div class="row padding">
+			<div class="col-md-5 number-col1">
+                <div id="count">
+					<span class="counter" data-target="3583" data-speed="100">0</span>
+				</div>
+            </div>
+            <div class="col-md-7 number-col2">
+                <div id="lable">
+					<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vegicula elementum sed sit maet dui.</p>
+				</div>
+            </div>
+        </div>
+    </div>
+    <!----------- End Chạy số ----------->
+    <!-------------- Trải nghiệm ------------->
+    <div class="experience">
+		<div class="content">
+			<h1>HÀNH TRÌNH TRẢI NGHIỆM</h1>
+			<div class="review">
+				<p> <strong>Xưởng Mộc Của Bố </strong> có một quy trình thiết kế nội thất rõ ràng, được chia thành nhiều bước khác nhau để khách hàng dễ dàng theo dõi và đánh giá hiệu suất làm việc của chúng tôi
+				</p>
+			</div>
+		</div>
+		<div class="icon-line">
+			<nav>
+				<ul class="menu">
+					<li id="icon-click0">
+						<img src="img/icon-06.png" alt="">
+						<div class="icon-text">
+							<p>Tiếp Nhận Thông Tin Khảo Sát Hiện Trạng</p>
+							<div id="line0" class="line" style="display: block;"></div>
+						</div>
+					</li>
+					<li id="icon-click1">
+						<img width="80px" height="80px" src="img/icon-07.png" alt="">
+						<div class="icon-text">
+							<p>Kí Hợp Đồng Thiết Kế</p>
+							<div id="line1" class="line" style="display: none;"></div>
+						</div>
+					</li>
+					<li id="icon-click2">
+						<img width="80px" height="80px" src="img/icon-08.png" alt="">
+						<div class="icon-text">
+							<p>Thiết Kế 2D-3D</p>
+							<div id="line2" class="line" style="display: none;"></div>
+						</div>
+					</li>
+					<li id="icon-click3">
+						<img width="80px" height="80px" src="img/icon-05.png" alt="">
+						<div class="icon-text">
+							<p>Thi Công</p>
+							<div id="line3" class="line" style="display: none;"></div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="story">
+			<div id="story-box0" style="display: block;">
+				<div class="story-box">
+					<div class="story-box-info">
+						<h1>Tiếp Nhận Thông Tin Khảo Sát Hiện Trạng</h1>
+						<p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+						<br>
+						<button>XEM THÊM</button>
+
+					</div>
+					<div class="story-box-img">
+						<img style="width: 98%;
+						height: 355px;" src="img/product/151652325_721772248499351_5896295670732939843_o.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div id="story-box1" style="display: none;">
+				<div class="story-box story-box1">
+					<div class="story-box-img">
+						<img style="width: 98%;
+						height: 355px" src="img/product/151652325_721772248499351_5896295670732939843_o.jpg" alt="">
+					</div>
+					<div class="story-box-info">
+						<h1>Kí Hợp Đồng Thiết Kế</h1>
+						<p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+						<br>
+						<button>XEM THÊM</button>
+					</div>
+
+				</div>
+			</div>
+			<div id="story-box2" style="display: none;">
+				<div class="story-box">
+					<div class="story-box-info">
+						<h1>Thiết Kế Bản Vẽ 2D-3D</h1>
+						<p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+						<br>
+						<button>XEM THÊM</button>
+
+					</div>
+					<div class="story-box-img">
+						<img style="width: 98%;
+						height: 355px" src="img/product/151652325_721772248499351_5896295670732939843_o.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div id="story-box3" style="display: none;">
+				<div class="story-box story-box1">
+					<div class="story-box-img">
+						<img style="width: 98%;
+						height: 355px" src="img/product/151652325_721772248499351_5896295670732939843_o.jpg" alt="">
+					</div>
+					<div class="story-box-info">
+						<h1>Thi Công</h1>
+						<p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+						<br>
+						<button>XEM THÊM</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-------------- End Trải nghiệm ------------->
+
+    <div class="list-3-sanpham">
+		<!-- Start Gỗ và Một ít mây đan -->
+		<section class="site-product">
+			<div class="row">
+				<div class="banner-container position-relative row-cols-40-percent">
+					<div class="position-absolute banner-content text-center">
+						<p class="fw-bold text-uppercase s32 txt-brown">Gỗ và một ít mây đan</p>
+						<button type="button" class="btn btn-other rounded-pill text-uppercase px-4	txt-gray s12" style="font-weight: bold;
+                        font-size: 14px;">Xem
+							thêm</button>
+					</div>
+					<img src="img/product/E0011.jpg" alt="" class="banner-img">
+				</div>
+				<div class="product-list row-cols-60-percent flex-wrap">
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-go1')">
+						<img src="img/faded-short-sleeves-tshirt.jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Accent Chair</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-go2')"><img src="img/printed-chiffon-dress.jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Panel Bed</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-go3')"><img src="img/printed-dress%20(1).jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Piece Sectional</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-go4')"><img src="img/printed-dress.jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Brown Dresser</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-go5')"><img src="img/printed-summer-dress.jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Oversize Chair</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-go6')"><img src="img/printed-summer-dress%20(1).jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Home Office Desk</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Popup -->
+			<div id="product-popup-go1" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-go1')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="go1-pic-1"><img src="img/faded-short-sleeves-tshirt%20(1).jpg" /></div>
+									<div class="tab-pane" id="go1-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="go1-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="go1-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('go1-pic-1')"><img src="img/faded-short-sleeves-tshirt%20(1).jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('go1-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('go1-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('go1-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="product-popup-go2" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-go2')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="go2-pic-1"><img src="img/printed-chiffon-dress.jpg" /></div>
+									<div class="tab-pane" id="go2-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="go2-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="go2-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('go2-pic-1')"><img src="img/printed-chiffon-dress.jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('go2-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('go2-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('go2-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="product-popup-go3" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-go3')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="go3-pic-1"><img src="img/printed-dress (1).jpg" /></div>
+									<div class="tab-pane" id="go3-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="go3-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="go3-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('go3-pic-1')"><img src="img/printed-dress (1).jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('go3-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('go3-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('go3-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="product-popup-go4" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-go4')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="go4-pic-1"><img src="img/printed-dress.jpg" />
+									</div>
+									<div class="tab-pane" id="go4-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="go4-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="go4-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('go4-pic-1')"><img src="img/printed-dress.jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('go4-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('go4-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('go4-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="product-popup-go5" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-go5')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="go5-pic-1"><img src="img/printed-summer-dress.jpg" /></div>
+									<div class="tab-pane" id="go5-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="go5-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="go5-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('go5-pic-1')"><img src="img/printed-summer-dress.jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('go5-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('go5-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('go5-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="product-popup-go6" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-go6')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="go6-pic-1"><img src="img/printed-summer-dress (1).jpg" /></div>
+									<div class="tab-pane" id="go6-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="go6-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="go6-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('go6-pic-1')"><img src="img/printed-summer-dress (1).jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('go6-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('go6-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('go6-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End popup -->
+		</section>
+		<!-- End Gỗ và Một ít mây đan -->
+
+		<!-- Start Hương Mộc -->
+		<section class="site-product">
+			<div class="row">
+				<div class="banner-container position-relative row-cols-40-percent">
+					<div class="position-absolute banner-content text-center">
+						<p class="fw-bold text-uppercase s32 txt-brown">Hương mộc</p>
+						<button type="button" class="btn btn-other rounded-pill text-uppercase px-4	txt-gray s12" style="font-weight: bold;
+                        font-size: 14px;">Xem
+							thêm</button>
+					</div>
+					<img src="img/product/phong-c%C3%A1ch-c%E1%BB%95-%C4%91i%E1%BB%83n.jpg" alt="" class="banner-img">
+				</div>
+				<div class="product-list row-cols-60-percent flex-wrap">
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-hm1')">
+						<img src="img/faded-short-sleeves-tshirt.jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Accent
+								Chair</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-hm2')"><img src="img/printed-chiffon-dress.jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Panel
+								Bed</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-hm3')"><img src="img/printed-dress%20(1).jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Piece
+								Sectional</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-hm4')"><img src="img/printed-dress.jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Brown
+								Dresser</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-hm5')"><img src="img/printed-summer-dress.jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Oversize
+								Chair</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-hm6')"><img src="img/printed-summer-dress%20(1).jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Home Office
+								Desk</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Popup -->
+			<div id="product-popup-hm1" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-hm1')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="hm1-pic-1"><img src="img/faded-short-sleeves-tshirt%20(1).jpg" /></div>
+									<div class="tab-pane" id="hm1-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="hm1-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="hm1-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('hm1-pic-1')"><img src="img/faded-short-sleeves-tshirt%20(1).jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('hm1-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('hm1-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('hm1-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="product-popup-hm2" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-hm2')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="hm2-pic-1"><img src="img/printed-chiffon-dress.jpg" /></div>
+									<div class="tab-pane" id="hm2-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="hm2-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="hm2-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('hm2-pic-1')"><img src="img/printed-chiffon-dress.jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('hm2-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('hm2-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('hm2-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="product-popup-hm3" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-hm3')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="hm3-pic-1"><img src="img/printed-dress (1).jpg" /></div>
+									<div class="tab-pane" id="hm3-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="hm3-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="hm3-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('hm3-pic-1')"><img src="img/printed-dress (1).jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('hm3-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('hm3-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('hm3-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="product-popup-hm4" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-hm4')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="hm4-pic-1"><img src="img/printed-dress.jpg" />
+									</div>
+									<div class="tab-pane" id="hm4-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="hm4-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="hm4-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('hm4-pic-1')"><img src="img/printed-dress.jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('hm4-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('hm4-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('hm4-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="product-popup-hm5" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-hm5')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="hm5-pic-1"><img src="img/printed-summer-dress.jpg" /></div>
+									<div class="tab-pane" id="hm5-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="hm5-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="hm5-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('hm5-pic-1')"><img src="img/printed-summer-dress.jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('hm5-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('hm5-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('hm5-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="product-popup-hm6" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-hm6')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="hm6-pic-1"><img src="img/printed-summer-dress (1).jpg" /></div>
+									<div class="tab-pane" id="hm6-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="hm6-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="hm6-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('hm6-pic-1')"><img src="img/printed-summer-dress (1).jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('hm6-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('hm6-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('hm6-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End popup -->
+
+		</section>
+		<!-- End Hương Mộc -->
+
+		<section class="site-product">
+			<div class="row">
+				<div class="banner-container position-relative row-cols-40-percent">
+					<div class="position-absolute banner-content text-center">
+						<p class="fw-bold text-uppercase s32 txt-brown">Vương quốc tuổi thơ</p>
+						<button type="button" class="btn btn-other rounded-pill text-uppercase px-4	txt-gray s12" style="font-weight: bold;
+                        font-size: 14px;">Xem
+							thêm</button>
+					</div>
+					<img src="img/product/hi%E1%BB%87n-%C4%91%E1%BA%A1i.jpg" alt="" class="banner-img">
+				</div>
+				<div class="product-list row-cols-60-percent flex-wrap">
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-vqtt1')">
+						<img src="img/faded-short-sleeves-tshirt.jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Accent Chair</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-vqtt2')"><img src="img/printed-chiffon-dress.jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Panel Bed</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-vqtt3')"><img src="img/printed-dress%20(1).jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Piece Sectional</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-vqtt4')"><img src="img/printed-dress.jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Brown Dresser</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-vqtt5')"><img src="img/printed-summer-dress.jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Oversize Chair</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="product-item col-4" onclick="openOrClosePopup_tc('product-popup-vqtt6')"><img src="img/printed-summer-dress%20(1).jpg" alt="" class="product-img">
+						<div class="product-content">
+							<p class="fw-bold s10 m-2">By: Xưởng Mộc Của Bố</p>
+							<a class="fw-bold s16 m-2 txt-brown">Home Office Desk</a>
+							<div class="date-rating">
+								<p class="fw-bold s10 m-2">Date: 26-12-2021</p>
+								<ul class="list-star">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Popup -->
+			<div id="product-popup-vqtt1" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-vqtt1')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="vqtt1-pic-1"><img src="img/faded-short-sleeves-tshirt%20(1).jpg" /></div>
+									<div class="tab-pane" id="vqtt1-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="vqtt1-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="vqtt1-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('vqtt1-pic-1')"><img src="img/faded-short-sleeves-tshirt%20(1).jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('vqtt1-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('vqtt1-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('vqtt1-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="product-popup-vqtt2" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-vqtt2')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="vqtt2-pic-1"><img src="img/printed-chiffon-dress.jpg" /></div>
+									<div class="tab-pane" id="vqtt2-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="vqtt2-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="vqtt2-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('vqtt2-pic-1')"><img src="img/printed-chiffon-dress.jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('vqtt2-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('vqtt2-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('vqtt2-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="product-popup-vqtt3" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-vqtt3')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="vqtt3-pic-1"><img src="img/printed-dress (1).jpg" /></div>
+									<div class="tab-pane" id="vqtt3-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="vqtt3-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="vqtt3-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('vqtt3-pic-1')"><img src="img/printed-dress (1).jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('vqtt3-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('vqtt3-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('vqtt3-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="product-popup-vqtt4" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-vqtt4')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="vqtt4-pic-1"><img src="img/printed-dress.jpg" />
+									</div>
+									<div class="tab-pane" id="vqtt4-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="vqtt4-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="vqtt4-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('vqtt4-pic-1')"><img src="img/printed-dress.jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('vqtt4-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('vqtt4-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('vqtt4-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="product-popup-vqtt5" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-vqtt5')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="vqtt5-pic-1"><img src="img/printed-summer-dress.jpg" /></div>
+									<div class="tab-pane" id="vqtt5-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="vqtt5-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="vqtt5-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('vqtt5-pic-1')"><img src="img/printed-summer-dress.jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('vqtt5-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('vqtt5-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('vqtt5-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="product-popup-vqtt6" class="container w-75 h-75" style="display: none;">
+				<div class="card">
+					<button id="kill-popup" onclick="openOrClosePopup_tc('product-popup-vqtt6')" class="popup-close rounded-pill p-4"></button>
+					<div class="container-fliud">
+						<div class="wrapper row">
+							<div class="preview col-md-6">
+								<div class="preview-pic tab-content">
+									<div class="tab-pane active" id="vqtt6-pic-1"><img src="img/printed-summer-dress (1).jpg" /></div>
+									<div class="tab-pane" id="vqtt6-pic-2"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+									<div class="tab-pane" id="vqtt6-pic-3"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></div>
+									<div class="tab-pane" id="vqtt6-pic-4"><img src="img/faded-short-sleeves-tshirt.jpg" />
+									</div>
+								</div>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active"><a data-target="#pic-1" data-toggle="tab" onclick="changeImage('vqtt6-pic-1')"><img src="img/printed-summer-dress (1).jpg" /></a></li>
+									<li><a data-target="#pic-2" data-toggle="tab" onclick="changeImage('vqtt6-pic-2')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+									<li><a data-target="#pic-3" data-toggle="tab" onclick="changeImage('vqtt6-pic-3')"><img src="img/131766067_684288275581082_6856552933860915789_o.jpg" /></a>
+									</li>
+									<li><a data-target="#pic-4" data-toggle="tab" onclick="changeImage('vqtt6-pic-4')"><img src="img/faded-short-sleeves-tshirt.jpg" /></a></li>
+								</ul>
+							</div>
+							<div class="details col-md-6">
+								<h3 class="product-title txt-brown">Accent Chair</h3>
+								<div class="rating">
+									<div class="stars">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</div>
+								</div>
+								<p class="product-description">Lorem ipsum is placeholder text commonly used in the graphic,
+									print, and publishing industries for previewing layouts and visual mockups.</p>
+								<div class="popup-pd-desciption txt-brown">
+									<h4 class="fw-bold">Chi tiết</h4>
+								</div>
+								<div class="row pop">
+									<div class="col-6">
+										<ul style="font-weight: bolder;">
+											<li>Chất liệu</li>
+											<li>Kích thước</li>
+											<li>Màu sắc</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<ul style="color: #9e9e9e;">
+											<li>Industrial</li>
+											<li>D46 x R38 x C79cm</li>
+											<li>Đen, Nâu</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End popup -->
+			<!-- End Vương quốc tuổi thơ -->
+		</section>
+
+	</div>
+    <!--- Sự kiện mới nhất--->
+	<div id="new-events" class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4">SỰ KIỆN MỚI NHẤT</h1>
+                <p class="new-content">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing</p>
+			</div>
+			<hr>
+		</div>
+	</div>
+	<!--X Sự kiện mới nhất X-->
+
+	<!--- Cards --->
+	<div id="new-events-card" class="container-fluid padding container-card">
+		<div class="row padding">
+			<div class="col-md-4">
+				<div class="card-1">
+					<img class="card-img-top" src="img/2-single-default.jpg">
+					<div class="card-body">
+						<h4 class="card-title">Tin tức 1</h4>
+						<p class="card-text">John is an Internet entrepreneur with almost 20 years of experience. Phil is a develop with over 5 years old web development experience</p>
+						<a href="#" class="btn btn-outline-secondary btn-add" style="background-color: #fff;
+                        border: navajowhite;
+                        color: #9e9e9e;
+                        font-size: 17px;
+                        font-weight: 300;
+                        padding-left: 0px;
+                        text-align: left;">Xem thêm &nbsp;&nbsp;></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card-1">
+					<img class="card-img-top" src="img/4-single-default.jpg">
+					<div class="card-body">
+						<h4 class="card-title">Tin tức 1</h4>
+						<p class="card-text">Phil is a develop with over 5 years old web development experience. Phil is a develop with over 5 years old web development experience</p>
+						<a href="#" class="btn btn-outline-secondary btn-add" style="background-color: #fff;
+                        border: navajowhite;
+                        color: #9e9e9e;
+                        font-size: 17px;
+                        font-weight: 300;
+                        padding-left: 0px;
+                        text-align: left;">Xem thêm &nbsp;&nbsp;></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card-1">
+					<img class="card-img-top" src="img/5-single-default.jpg">
+					<div class="card-body">
+						<h4 class="card-title">Tin tức 1</h4>
+						<p class="card-text">Mary is a designer with almost 10 years of digital design experience. Phil is a develop with over 5 years old web development experience</p>
+						<a href="#" class="btn btn-outline-secondary btn-add" style="background-color: #fff;
+                        border: navajowhite;
+                        color: #9e9e9e;
+                        font-size: 17px;
+                        font-weight: 300;
+                        padding-left: 0px;
+                        text-align: left;">Xem thêm &nbsp;&nbsp;></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div id="contact-site" class="container-fluid padding container-card container-card-img" style="background-image: url(img/background-footer.png)">
+        <div class="row padding">
+			<div class="col-md-6 padding-both">
+                
+            </div>
+            <div class="col-md-6 padding-both">
+                <form>
+                    <h2 class="registion-title">Đăng kí tư vấn</h2>
+                    <fieldset style="text-align: right;">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Tên của bạn">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Số điện thoại">
+                      </div>
+                      <button type="submit" class="btn btn-primary btn-send">Gửi</button>
+                    </fieldset>
+                    <div class="_social-media">
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+	<!--X Cards X-->
+
+    <!---------- Footer ---------->
+	<footer id="footer" >
+		<div class="container-fluid padding padding-footer">
+			<div class="row text-center">
+				<div class="col-md-3">
+					<img src="img/logo.jpg">
+				</div>
+				<div class="col-md-2 menu-footer">
+					<a href="Trangchu.html">Trang chủ</a>
+					<a href="XuongBo.html">Xưởng & Bố</a>
+                    <a href="SanPham.html">Sản phẩm</a>
+                    <a href="Sukien.html">Sự kiện</a>
+				</div>
+				<div class="col-md-2 menu-footer">
+					<a>Cửa hàng</a>
+					<a>Tin tức</a>
+                    <a>Dự án</a>
+                    <a href="Lienhe.html">Liên hệ</a>
+				</div>
+                <div class="col-md-5">
+					<p style="margin-bottom: 15px;">Số 96/24 Đường TX25, Khu phố 2, Phường Thạnh Xuân, Quận 12, TP Hồ Chí Minh</p>
+                    <p style="margin-bottom: 15px;">Hotline: 096 613 9597 (Mr Hùng) </p>
+                    <a href="xuongmoccuabo@gmail.com" style="color: #707070;
+                    text-decoration-line: none;">xuongmoccuabo@gmail.com</a>
+				</div>         
+            </div>
+		</div>
+        <div class="container-fluid padding padding-footer1">
+			<div class="row text-center">
+				<div class="col-md-4 copy">
+                    <p>@copy-right 2021 AToZ</p>
+                </div>
+                <div class="col-md-4">
+                    
+                </div>
+                <div class="col-md-4 payment">
+                    <img src="img/Payment.png">
+                </div>
+            </div>
+		</div>
+	</footer>
+	<div class="icon-bar">
+		<a href="https://www.facebook.com/X%C6%B0%E1%BB%9Fng-M%E1%BB%99c-c%E1%BB%A7a-B%E1%BB%91-184283932248188"><img src="img/b763699fd1fa3bfb374442593ae642e1.png" style="width: 80px; height: auto;"> </a>
+		<a href="https://www.instagram.com/xuongmoccuabo/"><img src="img/639b3dafb544d6f061fcddd2d6686ddb.png" style="width: 95px; height: auto;"> </a>
+		<a href="https://zalo.me/0902215841"><img src="img/vn.com.vng.zingalo_source.png" style="width: 60px; height: auto; margin-top: 10px;"> </a>
+	</div>
+    <!---------- End Footer ---------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/header.js"></script>
+    <script src="js/countTo.js"></script>
+    <script src="js/experience.js"></script>
+    <script src="js/listProduct.js"></script>
+	<script src="js/btnToTop.js"></script>
+    <script>
+		var x = document.getElementsByClassName('tab-pane');
+		
+		for(let i = 1 ; i <=x.length;i++)
+		{
+			$(document).ready(function(){
+			for(let j=1;j<=4;j++){
+				$('#go'+i+'-pic-'+j).zoom({ });
+			}
+			
+			});
+		}
+		for(let i = 1 ; i <=x.length;i++)
+		{
+			$(document).ready(function(){
+			for(let j=1;j<=4;j++){
+				$('#hm'+i+'-pic-'+j).zoom({ });
+			}
+			
+			});
+		}
+		
+		for(let i = 1 ; i <=x.length;i++)
+		{
+			$(document).ready(function(){
+			for(let j=1;j<=4;j++){
+				$('#vqtt'+i+'-pic-'+j).zoom({ });
+			}
+			
+			});
+		}
+	</script>
+</body>
+</html>
