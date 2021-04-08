@@ -1,0 +1,303 @@
+@import url(font.css);
+.experience {
+    text-align: center;
+}
+
+.experience .content h1 {
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "Roboto";
+    color: #AB7E57;
+    margin-bottom: 30px;
+    margin-top: 38px;
+    letter-spacing: 2px;
+}
+
+.experience .content .review {
+    display: flex;
+    margin-top: -20px;
+    justify-content: center;
+}
+
+.experience .content .review p {
+    -webkit-line-clamp: 2;
+    width: 53.89%;
+    font-size: 15px;
+    color: #9E9E9E;
+    margin-bottom: 14px;
+}
+
+.experience .content .review p strong {
+    font-weight: bold;
+    color: gray;
+}
+
+.experience .content .review .left {
+    margin-left: 200px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-family: "Roboto";
+    color: #707070;
+    margin-right: 3px;
+}
+
+.experience .icon-line nav {
+    text-align: center;
+    justify-content: center;
+}
+
+.experience .icon-line nav ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0px;
+    padding: 0px 20.3%;
+}
+
+.experience .icon-line nav ul li {
+    padding: 0px 30px;
+        list-style: none;
+        font-size: 14px;
+        color: #707070;
+}
+
+.experience .icon-line nav ul li p {
+    width: 120px;
+    font-size: 12px;
+    font-family: "Roboto";
+    font-weight: bold;
+    margin-top: -3px;
+}
+
+.experience .icon-line nav ul li .line {
+    width: 25%;
+    height: 2px;
+    background: #AB7E57;
+    margin: 10px 39%
+}
+.menu img {
+    width: 60px;
+    height: 56px;
+}
+
+.menu .icon-text {
+    padding-top: 5px;
+}
+.story .story-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 347px;
+}
+
+.story .story-box .story-box-info {
+    z-index: 1;
+    background-color: white;
+    margin-right: -3%;
+    margin-top: 20px;
+    width: 25.3%;
+    height: 315px;
+    float: left;
+    padding-left: 3%;
+    padding-right: 20px;
+    box-shadow: 0px 7px 5px rgb(145, 143, 143);
+}
+
+.story .story-box .story-box-info h1 {
+    font-size: 22px;
+    font-family: "Roboto";
+    margin-top: 50px;
+    width: 70%;
+    -webkit-line-clamp: 2;
+    text-align: left;
+    color: #AB7E57;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.story .story-box .story-box-info p {
+    text-align: left;
+    font-family: "Roboto";
+    font-size: 14px;
+    padding: 0% 0px;
+    color: #9E9E9E;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.story .story-box .story-box-info button {
+    width: 45%;
+    height: 11%;
+    font-weight: bold;
+    font-family: "Roboto";
+    border-radius: 20px;
+    float: left;
+    background-color: #AB7E57;
+    color: white;
+    font-size: 13px;
+    padding-top: -38px;
+    margin-top: -2%;
+    border-width: inherit;
+    letter-spacing: 2px;
+}
+
+.story .story-box .story-box-info button:hover {
+    background-color: #707070;
+}
+
+.story .story-box1 .story-box-info {
+    margin-left: -42px;
+    z-index: 1;
+    background-color: white;
+}
+
+.story-box-img {
+    width: 35%;
+}
+
+.story-box-img img {
+    height: 362px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1335px) {
+    .story .story-box .story-box-info h1 {
+        font-size: 17px;;
+    }
+    .story .story-box .story-box-info p {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .story .story-box .story-box-info button {
+        height: 9%;
+        font-size: 10px;
+    }
+}
+/* @media screen and (max-width: 786px) {
+    .experience .icon-line nav ul li {
+        padding: 0px 0%;
+        width: 38%;
+    }
+    .experience .icon-line nav ul li p {
+        width: 93%;
+        font-size: 9px;
+    }
+} */
+
+@media screen and (max-width: 789px) {
+    .experience .icon-line nav ul li {
+        padding: 0px 0%;
+        width: 38%;
+    }
+    .story .story-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 644px;
+        width: 100%;
+    }
+    .story .story-box .story-box-info button {
+        width: 32%;
+        height: 11%;
+        font-weight: bold;
+        font-family: "Roboto";
+        border-radius: 20px;
+        float: left;
+        background-color: #AB7E57;
+        color: white;
+        font-size: 13px;
+        padding-top: -38px;
+        margin-top: -19%;
+        margin-bottom: 8px;
+    }
+    .story .story-box .story-box-info p {
+        margin-bottom: 22%;
+    }
+    .story .story-box .story-box-info {
+        z-index: 1;
+        background-color: white;
+        margin-right: -3%;
+        margin-top: 30px;
+        width: 50.3%;
+        height: 250px;
+        float: left;
+        padding-left: 3%;
+        padding-right: 10px;
+        box-shadow: 0px 7px 5px rgb(145 143 143);
+        padding-bottom: -25px;
+        margin-bottom: 15px;
+    }
+    .story .story-box .story-box-info h1 {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+    .story-box-img {
+        width: 80%;
+    }
+    .story .story-box .story-box-info button {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 633px){
+    .story .story-box .story-box-info p {
+        margin-bottom: 16%;
+    }
+    .story .story-box .story-box-info button {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 547px){
+    .story .story-box .story-box-info h1 {
+        font-size: 17px;
+    }
+    .experience .icon-line nav ul li p {
+        width: 75px;
+    }
+    .menu img {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media screen and (max-width: 490px){
+    .story .story-box .story-box-info h1 {
+        font-size: 16px;
+    }
+    .story .story-box .story-box-info button {
+        font-size: 11px;
+    }
+    .story .story-box .story-box-info button {
+        width: 41%;
+        height: 10%;
+    }
+}
+@media screen and (max-width: 462px){
+    .story .story-box .story-box-info p {
+        margin-bottom: 21px;
+    }
+    .story .story-box .story-box-info button {
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 397px){
+    .story .story-box .story-box-info h1 {
+        font-size: 15px;
+    }
+    .story .story-box .story-box-info p {
+        margin-bottom: 9px;
+    }
+    .story .story-box .story-box-info {
+        height: 261px;
+    }
+}
+@media screen and (max-width: 373px){
+    .story .story-box .story-box-info h1 {
+        font-size: 13px;
+    }
+    .story .story-box .story-box-info p {
+        margin-bottom: 12px;
+    }
+    .story .story-box .story-box-info button {
+        font-size: 7px;
+    }
+}

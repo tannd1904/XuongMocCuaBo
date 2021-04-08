@@ -1,0 +1,66 @@
+@import url(font.css);
+.container-card-img{
+    background-size: cover;
+    width: 78%;
+    height: 360px;
+}
+.registion-title{
+    text-align: right;
+    color: #707070;
+    font-size: 25px;
+}
+.padding-both{
+    padding: 53px 48px;
+}
+.form-control{
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    background-color: #f1f1f3;
+    border-radius: 0px;
+    padding-bottom: 0px;
+}
+.form-group{
+    margin-bottom: 37px;
+    border-radius: 0px;
+}
+.btn-send{
+    background-color: #efefef;
+    color: #efa707;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 15px;
+    width: 105px;
+    padding: 0px;
+}
+
+._social-media a img{
+    width: 10%;
+}
+.fa-facebook-square, .fa-linkedin, .fa-youtube,.fa-instagram
+{
+    color: #5a5454;
+    transform: scale(1.3);
+}
+._social-media a{
+    margin-left: 8%;
+}
+._social-media{
+    text-align: right;
+    margin-top: 31px;
+}
+@media screen and (max-width: 768px){
+    .padding-both{
+        padding: 19px 48px;
+    }
+}
+@media screen and (max-width: 480px){
+    ._social-media a {
+        margin-left: 5%;
+    }
+    .container-card {
+        width: 100%;
+        margin-bottom: 31px;
+    }
+}
+

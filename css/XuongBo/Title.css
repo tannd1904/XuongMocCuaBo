@@ -1,0 +1,145 @@
+@import url(font.css);
+.XBTitle{
+    font-size: 30px;
+    font-weight: bold;
+	letter-spacing: 4px;
+	color: #AB7E57;
+}
+.content1 p{
+    color: #707070;
+    padding-top: 31px;
+    text-align: center;
+    line-height: 31px;
+    font-size: 14px;
+}
+.content2 h2{
+    margin-top: 107px;
+	font-size: 23px;
+	color: #bd6c26;
+	margin-bottom: 23px;
+	font-weight: bold;
+}
+.content2 p{
+    line-height: 22px; 
+    color: #707070;
+    font-size: 14px;
+}
+.content-why{
+    width: 61%;
+    margin-bottom: 55px;
+}
+.content-we{
+    width: 51%;
+    margin-bottom: 103px;
+}
+.content-img{
+    width: 60%;
+    margin-bottom: 55px;
+}
+.content-7{
+    background-color: #f3f3f3;
+    height: 446px;
+}
+.content-5 img{
+    width: 169%;
+	height: 130%;
+	margin-top: -106px;
+	margin-left: -63px;
+}
+.content-12 h1{
+    text-align: center;
+    font-weight: bold;
+    color: #AB7E57;
+    font-size: 26px;
+    margin-bottom: 26px;
+}
+.content-12-p p{
+    text-align: center;
+    color: #707070;
+    font-size: 14px;
+}
+.img-title
+{
+    position: relative;
+}
+.img-title .img-title-{
+    z-index: 1;
+    position: absolute;
+    top: -70px;
+    left: 51px;
+}
+.title-img img{
+    width: 128px;
+    height: 60%;
+} 
+.img-title .img-title--{
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+}
+@media screen and (max-width: 1187px){
+    .content-row{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 949px){
+    .content-row{
+        justify-content: center;
+    }
+    .content-7{
+        height: 547px;
+    }
+}
+@media screen and (max-width: 768px){
+    .content-row{
+        justify-content: center;
+    }
+    .content-7{
+        height: 446px;
+    }
+    .content-5 img{
+        width: 100%;
+        height: 350px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    #img-title- img{
+        margin-bottom: 40px;
+    }
+    #img-title-- img{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 584px){
+    .content2 h2 {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 510px){
+    .content-7 {
+        height: 529px;
+    }
+}
+@media screen and (max-width: 480px){
+    .content-why{
+        width: 100%;
+        margin-bottom: 55px;
+    }
+    .content1{
+        margin-top: -45px;
+    }
+    .content-7 {
+        height: 347px;
+    }
+    .content-we{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .content-img{
+        width: 100%;
+        margin-bottom: 47px;
+    }
+}
+
+
+

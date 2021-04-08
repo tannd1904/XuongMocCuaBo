@@ -1,0 +1,42 @@
+@import url(font.css);
+.title{
+    height: 79.5vh;
+    width: 100%;
+    color: white;
+    background-size: cover;
+}
+.h-100{
+    height: 100%;
+    width: 100%;
+}
+.title .col-md-12 {
+    padding: 0px 23.5vw;
+}
+
+.title .col-md-12 h1{
+    font-weight: bold; 
+    font-size: 3vw;
+    margin-bottom: 3.5%;
+    letter-spacing: 2px;
+}
+.title .col-md-12 p{
+    font-size: 132%; 
+    line-height: 27px; 
+    color: #9e9e9e;
+}
+@media screen and (max-width: 768px){
+    .title{
+        height: 40vh;
+    }
+    .title .col-md-12 {
+        padding: 105px 12.5vw;
+    }
+    .title .col-md-12 h1 {
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width: 768px){
+    .title .col-md-12 p {
+        font-size: 97%;
+    }
+}

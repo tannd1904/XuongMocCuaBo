@@ -1,0 +1,51 @@
+@import url(font.css);
+#count{
+    font-size: 41px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: #AB7E57;
+    height: 79px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+#lable p{
+    font-size: 16px;
+    color: #9e9e9e;
+}
+.number-col1{
+    margin: 50px 0px;
+    padding-right: 69px;
+    border-right: 2px solid #9e9e9e;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.number-col2{
+    margin: 53px 0px 50px 0px;
+    width: 367px;
+    margin-left: 83px;
+}
+@media screen and (max-width: 815px){
+    .number-col1 {
+        width: 288px;
+    }
+    .number-col2 {
+        margin-left: 60px;
+    }
+}
+@media screen and (max-width: 768px){
+    .number-col1 {
+        border: none;
+        text-align: center;
+        width: 100%;
+        margin-right: 0px;
+        padding-right: 0px;
+        margin: 25px 0px 0px 0px;
+    }
+    .number-col2{
+        margin: 0px 0px 19px 0px;
+        text-align: center;
+        width: 100%;
+    }
+}

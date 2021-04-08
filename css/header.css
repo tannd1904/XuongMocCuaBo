@@ -1,0 +1,145 @@
+@import url(font.css);
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto";
+}
+.header
+{
+    width: 100%;
+	padding: 0 14.5%;
+    height: 0rem;
+    padding-right: 7.9%;
+    overflow: hidden;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.header .header-menu
+{
+	justify-content: space-between;
+}
+.flex-row
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+} 
+
+.header .header-items
+{
+	list-style-type: none;
+    display: flex;
+    margin-top: 0.5%;
+    justify-content: center;
+    margin-right: -22%;
+}
+
+#header-items-id 
+{
+    display: none;
+}
+.header .header-items .header-link
+{
+	padding: 10% 0.8vw;
+    position: relative;
+    list-style: none;
+    font-size: 14px;
+    margin: -20px 0;
+    color: #707070;
+}
+
+.header .header-items .header-link a
+{
+	text-decoration: none;
+	color: #707070;
+	font-weight: bold;	
+	font-size: 1.7vw;
+}
+
+.header .naheaderv-items .header-link:hover a
+{
+	color: #AB7E57;
+}
+
+.header .header-brand a
+{
+	padding: 13% 0;
+	display: block;
+	padding-bottom: -12px;
+}
+.header .header-icon
+{
+	padding: 5% 0;
+	display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.header .header-icon a {
+	margin: 0px 4px;
+	padding-bottom: -3px;
+	z-index: 1;
+}
+.header .header-icon  i
+{
+	padding: 0.2rem;
+	margin-top: 5px;
+    font-size: 2.2vw;
+    
+}
+.text-gray img{
+    width: 7.6vw;
+}
+.header-icon img{
+   width: 2.5vw;
+}
+@keyframes example {
+    from {top: -113px;}
+    to {top: 0px;}
+  }
+.show{
+    position: absolute;
+    left: 26.5%;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+@media screen and (max-width: 768px){
+     
+    .header-items{
+        flex-direction: column;
+        width: 68vw;
+    }
+    .header .header-menu {
+        position: relative;
+    }
+    .header-items-class{
+        padding: 0px 0px;
+        position: absolute;
+        top: 85%;
+        left: -2%;
+    }
+    .header .header-items .header-link {
+        padding: 26px 0px;
+        text-align: center;
+    }
+
+    .header{
+        min-height: 96px;
+        transition: min-height .4s ease-in-out;
+    }
+    .header .header-items .header-link a {
+        font-size: 20px;
+    }
+    .header-icon  a img{
+        width: 38px;
+     }
+     .header .header-icon  i
+    {
+        font-size: 33px;
+        margin-bottom: 3px;
+    }
+    .text-gray img{
+        width: 74px;
+    }
+}  

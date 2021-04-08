@@ -1,0 +1,257 @@
+@import url(font.css);
+@import url(gridview.css);
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto";
+}
+
+.row {
+  position: relative;
+  justify-content: center;
+}
+.row .slogan{
+  width: 35%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -30%);
+  text-align: center;   
+}
+.row .slogan h1 {
+  font-size: 285%;
+  font-weight: bolder;
+  color: white;
+}
+.row .slogan p {
+  margin-top: 4%;
+  font-size: 24px;
+  color: #e9e9e9 !important;
+  font-family: 'Roboto';
+  -webkit-line-clamp: 2;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+@media only screen and (max-width: 768px) {
+  .row .slogan {
+      width: 50% !important;
+      height: 50% !important;
+      top: 45% !important;
+      left: 50% !important;
+      position: absolute;
+      transform: translate(-50%, -30%);
+      text-align: center;
+  }
+
+  .row .slogan p {
+    color: #e9e9e9 !important; 
+  }
+}
+
+
+.row-sm {
+  text-align: center;
+  margin-top: 20px;
+}
+.row-map {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.row-map form {
+  margin-left: 10px;
+  margin-top: 20px;
+  text-align: left;
+}
+.row-map form .row-input .ten {
+  display: flex;
+}
+.row-map form .row-input h1 {
+  font-size: 20px;
+  color: #AB7E57;
+}
+.row-map form .row-input input {
+  width: 400px;
+  height: 40px;
+  margin: 10px 20px 20px 20px;
+  margin-left: -1px;
+  border: 1px solid #AB7E57;
+
+}
+.row-map form .row-input textarea {
+  border: 1px solid #AB7E57;
+}
+.row-map form  button {
+  width: 200px;
+  height: 50px;
+  border-radius:20px;
+  margin-top: 30px;
+  background:#AB7E57 ;
+  color: white;
+  font-weight: bold;
+  font-family: "Roboto";
+  font-size: 18px;
+}
+.thien-img{
+  margin-top: 30px;;
+  width: 600px;
+  height: 420px;
+}
+
+
+  .icon-bar {
+    position: fixed;
+    top: 70%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-66%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    opacity: 0.65;
+  }
+  
+  .icon-bar a:hover {
+    opacity: 0.8;
+  }
+
+  /*---------- Form ----------*/
+.Detail_Posts_form .column1
+{
+    display: flex;
+    width: 100%;
+}
+.Detail_Posts_form .label
+{		
+    font-weight: 800;		
+    color: #b78152;;	
+    margin-bottom: 7px;
+    font-size: larger;
+}
+.Detail_Posts_form .input
+{		
+    height: 40px;		
+    width: 100%;		
+    border: 1px solid #9e9e9e;
+    padding: 10px 10px !important;
+}
+.Detail_Posts_form .input_
+{		
+    height: 40px;		
+    width: 100%;			
+    border: 1px solid #9e9e9e;
+    padding: 10px 10px !important;
+}
+.Detail_Posts_form .input__
+{		
+    height: 140px;		
+    width: 100%;				
+    border: 1px solid #969292;
+}
+.Detail_Posts_form .Send
+{		
+    border: none;		
+    border-radius: 20px;		
+    font-size: 17px;	
+    font-weight: 750;	
+    cursor: pointer;		
+    background-color: #b78152;;		
+    color: #fff;		
+    width: 175px;		
+    margin-top: 15px;
+    height: 45px;
+}
+.Detail_Posts_form .column1_
+{		
+    display: flex;		
+    flex-direction: column;	
+    width: 100%;
+}
+.Detail_Posts_form .column2
+{		
+    display: flex;		
+    flex-direction: column;	
+    margin-top: 12px;
+}
+
+@media only screen and (max-width: 1220px) {
+  .Detail_Posts_form {
+    flex-direction: column;
+  }
+
+  /* Form Mobile */
+  .Detail_Posts_form .column1
+  {
+      display: flex;
+  }
+  .Detail_Posts_form .label
+  {		
+      font-weight: 800;		
+      color: #b78152;;	
+      margin-bottom: 7px;
+  }
+  .Detail_Posts_form .input
+  {		
+      height: 29px;		
+      width: 105%;		
+      background-color: #dad8d8;	
+      border: 1px solid #969292;
+  }
+  .Detail_Posts_form .input_
+  {		
+      height: 29px;		
+      width: 100% !important;		
+      background-color: #dad8d8;		
+      border: 1px solid #969292;
+  }
+  .Detail_Posts_form .input__
+  {		
+      height: 140px;		
+      width: 100% !important;		
+      background-color: #dad8d8;		
+      border: 1px solid #969292;
+  }
+  .Detail_Posts_form .Send
+  {		
+      border: none;		
+      border-radius: 12px;		
+      font-size: 17px;	
+      font-weight: 750;	
+      cursor: pointer;		
+      background-color: #b78152;;		
+      color: #fff;		
+      width: 145px;		
+      margin-top: 15px;
+  }
+  .Detail_Posts_form .column1_
+  {		
+      display: flex;		
+      flex-direction: column;	
+      width: 50% !important;
+      margin-right: 10px;
+  }
+  .Detail_Posts_form .column2
+  {		
+      display: flex;		
+      flex-direction: column;	
+      margin-top: 12px;
+      width: 100% !important;
+  }
+
+  .Detail_Posts_form .column2 .thien-img {
+    width: 100% !important;
+    height: auto;
+  }
+
+
+
+}
